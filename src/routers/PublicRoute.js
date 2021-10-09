@@ -9,7 +9,6 @@ export const PublicRoute = ({
     component: Component,
     ...rest
 }) => {
-
     return (
         <Route { ...rest }
             component={ (props) => (
@@ -17,7 +16,7 @@ export const PublicRoute = ({
                     ? ( <Redirect to="/" /> )
                     : ( <Component { ...props } /> )
             )}
-        
+
         />
     )
 }

@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Route, Redirect } from 'react-router-dom';
-
 
 export const PrivateRoute = ({
     isAuthenticated,
     component: Component,
     ...rest
 }) => {
-
     return (
         <Route { ...rest }
             component={ (props) => (
@@ -17,7 +14,6 @@ export const PrivateRoute = ({
                     ? ( <Component { ...props } /> )
                     : ( <Redirect to="/auth/login" /> )
             )}
-        
         />
     )
 }
