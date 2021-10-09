@@ -1,4 +1,4 @@
-import { facebookAuthProvider, firebase, googleAuthProvider } from '../firebase/firebase-config';
+import { firebase, googleAuthProvider } from '../firebase/firebase-config';
 import Swal from 'sweetalert2';
 import { types } from '../types/types';
 import { finishLoading, startLoading } from './uiAction';
